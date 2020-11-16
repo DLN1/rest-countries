@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="/styles/style.css" />
+    <title>Countries</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <p class="title-nav-bar">Where in the world?</p>
+            <p onclick="togglingDarkMode()" class="dark-mode-btn">Dark Mode</p>
+        </nav>
+    </header>
+    <div class="search-filter">
+        <div class="search">
+            <input id="search-bar" autocomplete="off" class="search dark" type="search" value = '' placeholder="Search for a country…" onkeyup="getCountries(false, 'Filter by Region', document.getElementById('search-bar').value)">
+            <svg id="glass" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 11H11.7L11.4 10.7C12.4 9.6 13 8.1 13 6.5C13 2.9 10.1 0 6.5 0C2.9 0 0 2.9 0 6.5C0 10.1 2.9 13 6.5 13C8.1 13 9.6 12.4 10.7 11.4L11 11.7V12.5L16 17.5L17.5 16L12.5 11V11ZM6.5 11C4 11 2 9 2 6.5C2 4 4 2 6.5 2C9 2 11 4 11 6.5C11 9 9 11 6.5 11V11Z" fill="#848484"/></svg>
+        </div>
+        <div class="dropdown">
+            <div class="dropdown-title" onclick="dropdownBtn()">
+                <p id="filterTitle" class="filter filter-title">Filter by Region</p>
+            </div>
+            <div class="dropdown-content">
+                <a class="dropdown-filter filter" onclick="dropdownFilter(this), reloadCountries()">Africa</a>
+                <a class="dropdown-filter filter" onclick="dropdownFilter(this), reloadCountries()">Americas</a>
+                <a class="dropdown-filter filter" onclick="dropdownFilter(this), reloadCountries()">Asia</a>
+                <a class="dropdown-filter filter" onclick="dropdownFilter(this), reloadCountries()">Europe</a>
+                <a class="dropdown-filter filter" onclick="dropdownFilter(this), reloadCountries()">Oceania</a>
+            </div>
+        </div>
+    </div>
+    <div id="countriesCards" class="countries-cards">
+        <div class="country-card" onclick="onClickCountryCard(this)">
+            <span class="country-card-img"></span>
+            <div class="country-card-desc">
+                <p class="card-countries-title country-name"></p>
+                <p class="card-desc bold600">Population:<span class="card-desc population"></span></p>
+                <p class="card-desc bold600">Region:<span class="card-desc region"></span></p>
+                <p class="card-desc bold600">Capital:<span class="card-desc capital"></span></p>
+            </div>
+            <div class="country-card-desc-detail">
+                <a class="back-button bold300" href="/index.html">Back</a>
+                <div class="detail-wrap-title">
+                    <p class="detail-title country-name"></p>
+                </div>
+                <div class="detail-desc-wrap">
+                    <div class="detail-desc-wrap-left">
+                        <p class="detail-desc bold600">Native Name: <span id="native-name" class="card-desc"></span></p>
+                        <p class="detail-desc bold600">Population: <span class="card-desc population"></span></p>
+                        <p class="detail-desc bold600">Region: <span class="card-desc region"></span></p>
+                        <p class="detail-desc bold600">Sub Region: <span id="sub-region" class="card-desc"></span></p>
+                        <p class="detail-desc bold600">Capital: <span class="card-desc capital"></span></p>
+                    </div>
+                    <div class="detail-desc-wrap-right">
+                        <p class="detail-desc bold600">Top Level Domain: <span class="card-desc" id="domain"></span></p>
+                        <p class="detail-desc bold600">Currencies: <span id="currencies" class="card-desc"></span></p>
+                        <p class="detail-desc bold600">Languages: <span id="languages" class="card-desc"></span></p>
+                    </div>
+                </div>
+                <div class="detail-border-wrap">
+                    <p class="detail-desc bold700">Border Countries: <span id="border-countries" class="card-desc"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/components/app.js"></script>
+</body>
+</html>

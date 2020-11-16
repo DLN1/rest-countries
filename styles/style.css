@@ -1,0 +1,1142 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+button,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset, form, label, legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: background-color 0.2s ease-in-out, background 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, background 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, background 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, background 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+}
+
+*::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 0;
+  background-color: #e6e6e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+body.dark-mode {
+  background-color: #202c36;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: white;
+}
+
+@media screen and (min-width: 200px) {
+  .dropdown, .dropdown-title, .dropdown-title.dark-mode, .dropdown-title:hover, .dropdown-title.dark-mode:hover, .dropdown-title::after, .dropdown-title.dark-mode::after, .dropdown-title.active::after, .dropdown-content, .dropdown-content.active, .dropdown-filter, .dropdown-filter.dark-mode, .dropdown-filter:hover, .dropdown-filter.dark-mode:hover {
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+  }
+}
+
+* {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.title-nav-bar {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 20px;
+}
+
+.dark-mode {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.search {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.filter {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.card-countries-title {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 26px;
+}
+
+.card-desc {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.detail-desc {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.detail-title {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 44px;
+}
+
+.detail-border {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
+}
+
+.detail-border-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.back-button {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.black {
+  color: #111517;
+}
+
+.white, .dark-mode {
+  color: white;
+}
+
+.bold700 {
+  font-weight: 700;
+}
+
+.bold600 {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .title-nav-bar {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .dark-mode {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .back-button, .detail-desc, .card-desc {
+    font-size: 14px;
+  }
+}
+
+.dropdown {
+  width: 200px;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.dropdown-title {
+  width: 200px;
+  height: 56px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+          box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+  border-radius: 5px;
+  padding: 18px 18px 18px 24px;
+  cursor: pointer;
+  position: relative;
+  color: #111517;
+}
+
+.dropdown-title.dark-mode {
+  background-color: #2b3844;
+  color: white;
+}
+
+.dropdown-title:hover {
+  background: #e6e6e6;
+}
+
+.dropdown-title.dark-mode:hover {
+  background: #202c36;
+}
+
+.dropdown-title::after {
+  content: '';
+  background: url(/assets/arrow-down.svg);
+  background-size: cover;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 19px;
+  right: 24px;
+  bottom: unset;
+  left: unset;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.dropdown-title.dark-mode::after {
+  background: url(/assets/arrow-down-dark.svg);
+  background-size: cover;
+}
+
+.dropdown-title.active::after {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.dropdown-content {
+  width: 200px;
+  height: 0px;
+  -webkit-box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+          box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+  border-radius: 5px;
+  position: absolute;
+  top: 60px;
+  right: unset;
+  bottom: unset;
+  left: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: -2;
+  pointer-events: none;
+}
+
+.dropdown-content.active {
+  height: 164px;
+  z-index: 2;
+  pointer-events: all;
+}
+
+.dropdown-filter {
+  width: 100%;
+  height: 33px;
+  padding-left: 24px;
+  padding-top: 7px;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.dropdown-filter.dark-mode {
+  background-color: #2b3844;
+}
+
+.dropdown-filter:hover {
+  background-color: #e6e6e6;
+}
+
+.dropdown-filter.dark-mode:hover {
+  background-color: #24333f;
+}
+
+#search-bar {
+  width: 480px;
+  background-color: white;
+  border: none;
+  outline: none;
+  height: 56px;
+  border-radius: 5px;
+  padding: 18px 32px 18px 74px;
+  position: relative;
+}
+
+#search-bar.dark-mode {
+  background-color: #2b3844;
+}
+
+#glass {
+  position: absolute;
+  top: unset;
+  right: unset;
+  bottom: unset;
+  left: 33px;
+}
+
+#glass.dark-mode > path {
+  fill: #FFFFFF;
+}
+
+#search-bar::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #111517;
+}
+
+#search-bar:-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #111517;
+}
+
+#search-bar::-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #111517;
+}
+
+#search-bar::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #111517;
+}
+
+#search-bar.dark-mode::-webkit-input-placeholder {
+  color: white;
+}
+
+#search-bar.dark-mode:-ms-input-placeholder {
+  color: white;
+}
+
+#search-bar.dark-mode::-ms-input-placeholder {
+  color: white;
+}
+
+#search-bar.dark-mode::placeholder {
+  color: white;
+}
+
+@media scren and (max-width: 1300px) {
+  #search-bar {
+    width: 100%;
+  }
+}
+
+.back-button {
+  background-color: #FFF;
+  width: 136px;
+  height: 40px;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 39px 10px 0px;
+  color: #111517;
+}
+
+.back-button.dark-mode {
+  background: #2b3844;
+  color: white;
+}
+
+.back-button::before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-image: url(/assets/back-button-arrow.svg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 7px;
+  right: unset;
+  bottom: unset;
+  left: 23px;
+}
+
+.back-button.dark-mode::before {
+  background-image: url(/assets/back-button-arrow-white.svg);
+}
+
+.back-button:hover {
+  background-color: #f1f1f1;
+}
+
+.back-button.dark-mode:hover {
+  background-color: #24333f;
+}
+
+@media screen and (max-width: 768px) {
+  .back-button {
+    width: 104px;
+    height: 32px;
+    border-radius: 2px;
+    padding: 6px 20px 6px 0px;
+  }
+  .back-button::before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-image: url(/assets/back-button-arrow.svg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 2px;
+    right: unset;
+    bottom: unset;
+    left: 23px;
+  }
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+header.dark-mode {
+  background-color: #2b3844;
+}
+
+nav {
+  width: 1280px;
+  height: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.dark-mode-btn {
+  width: 80px;
+  height: 16px;
+  position: relative;
+  top: 0px;
+  cursor: pointer;
+}
+
+.dark-mode-btn:hover {
+  text-decoration: underline;
+}
+
+.dark-mode-btn.dark-mode {
+  height: 19px;
+}
+
+.dark-mode-btn::before {
+  content: '';
+  position: absolute;
+  top: unset;
+  right: unset;
+  bottom: -1px;
+  left: -30px;
+  width: 20px;
+  height: 20px;
+  background-image: url(/assets/icon-moon.svg);
+}
+
+@media screen and (max-width: 1300px) {
+  nav {
+    width: 603px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    width: 90%;
+    height: 20px;
+  }
+  .dark-mode-btn::before {
+    position: absolute;
+    top: unset;
+    right: unset;
+    bottom: -1px;
+    left: -30px;
+  }
+}
+
+.search-filter {
+  margin-top: 48px;
+  width: 1280px;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.search {
+  position: relative;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1300px) {
+  .search-filter {
+    width: 603px;
+  }
+  .search {
+    width: 343px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .search-filter {
+    width: 92%;
+    max-width: 343px;
+    height: 136px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .search {
+    position: relative;
+    height: 56px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.countries-cards {
+  width: 1280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 48px;
+}
+
+.country-card {
+  width: 264px;
+  height: 336px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.country-card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.5);
+}
+
+.country-card.dark-mode {
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(200, 200, 200, 0.5);
+          box-shadow: 0px 0px 10px 1px rgba(200, 200, 200, 0.5);
+}
+
+.country-card.dark-mode:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0px 0px 10px 6px rgba(200, 200, 200, 0.5);
+          box-shadow: 0px 0px 10px 6px rgba(200, 200, 200, 0.5);
+}
+
+.country-card-img {
+  width: 100%;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: white;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+.country-card.dark-mode > .country-card-img {
+  background: #2b3844;
+}
+
+.country-card-desc {
+  width: 100%;
+  height: 177px;
+  padding: 24px 24px 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #FFF;
+}
+
+.country-card-desc.dark-mode {
+  background: #2b3844;
+}
+
+.card-countries-title {
+  margin-bottom: 16px;
+}
+
+.card-desc {
+  margin-top: 8px;
+}
+
+.country-card-desc-detail {
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .countries-cards {
+    width: 603px;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .countries-cards {
+    width: 264px;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 32px;
+  }
+  .country-card {
+    width: 264px;
+    height: 336px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .country-card-img {
+    width: 100%;
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .country-card-desc {
+    width: 100%;
+    height: 177px;
+    padding: 24px 24px 46px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #FFF;
+  }
+  .country-card-desc.dark-mode {
+    background: #2b3844;
+  }
+  .card-countries-title {
+    margin-bottom: 16px;
+  }
+  .card-desc {
+    margin-top: 8px;
+  }
+}
+
+.countries-cards.card-detail {
+  width: 1280px;
+  height: 401px;
+  margin-top: 221px;
+}
+
+.country-card.card-detail-out, .search-filter.card-detail-out,
+.country-card.card-detail > .country-card-desc {
+  display: none;
+}
+
+.country-card.card-detail {
+  width: 100%;
+  height: 372px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 3;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: -webkit-box-shadow 0s;
+  transition: -webkit-box-shadow 0s;
+  transition: box-shadow 0s;
+  transition: box-shadow 0s, -webkit-box-shadow 0s;
+  cursor: default;
+}
+
+.country-card.card-detail:hover, .country-card.card-detail.dark-mode:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.country-card.card-detail > .country-card-img {
+  width: 560px;
+  height: 401px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: 0s;
+  transition: 0s;
+  background: transparent;
+}
+
+.country-card-desc-detail.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 598px;
+  height: 323px;
+}
+
+.detail-wrap-title {
+  margin-bottom: 23px;
+}
+
+.detail-desc-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: auto;
+  margin-bottom: 68px;
+}
+
+.detail-desc-wrap-left {
+  width: 345px;
+}
+
+.back-button {
+  position: absolute;
+  top: -80px;
+  right: unset;
+  bottom: unset;
+  left: 0px;
+}
+
+@media screen and (max-width: 1300px) {
+  .countries-cards.card-detail {
+    width: 320px;
+    height: 709px;
+    margin-top: 136px;
+  }
+  .country-card.card-detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 3;
+    height: 709px;
+  }
+  .country-card.card-detail > .country-card-img {
+    width: 320px;
+    height: 229px;
+    border-radius: 5px;
+  }
+  .country-card-desc-detail.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 308px;
+    height: 436px;
+  }
+  .detail-wrap-title {
+    margin-bottom: 16px;
+  }
+  .detail-desc-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
+    height: 288px;
+    margin-bottom: 34px;
+  }
+  .detail-desc-wrap-left {
+    width: 100%;
+    height: 160px;
+  }
+  .detail-desc-wrap-right {
+    width: 100%;
+    height: 96px;
+  }
+  .back-button {
+    position: absolute;
+    top: -80px;
+    right: unset;
+    bottom: unset;
+    left: 0px;
+  }
+}
+
+.blank-card {
+  width: 264px;
+  height: 336px;
+  background: transparent;
+  pointer-events: none;
+}
+/*# sourceMappingURL=style.css.map */

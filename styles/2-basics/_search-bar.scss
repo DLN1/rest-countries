@@ -1,0 +1,39 @@
+#search-bar {
+    width: 480px;
+    background-color: white;
+    border: none;
+    outline: none;
+    height: 56px;
+    border-radius: 5px;
+    padding: 18px 32px 18px 74px;
+    position: relative;
+}
+
+#search-bar.dark-mode {
+    background-color: $light-dark;
+}
+
+#glass {
+    @include absolute-el(unset, unset, unset, 33px)
+}
+
+#glass.dark-mode > path {
+    fill: #FFFFFF;
+}
+
+#search-bar::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $black;
+}
+
+#search-bar.dark-mode::placeholder {
+    color: white;
+}
+
+@media scren and  (max-width: 1300px) {
+    #search-bar {
+        width: 100%;
+    }
+}

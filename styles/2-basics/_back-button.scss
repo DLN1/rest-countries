@@ -1,0 +1,56 @@
+.back-button {
+    background-color: #FFF;
+    width: 136px;
+    height: 40px;
+    border-radius: 6px;
+    @include flex(flex, row, flex-end, center);
+    padding: 10px 39px 10px 0px;
+    color: $black;
+}
+
+.back-button.dark-mode {
+    background: $light-dark;
+    color: white;
+}
+
+.back-button::before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-image: url(/assets/back-button-arrow.svg);
+    background-size: cover;
+    background-position: center;
+    @include absolute-el(7px, unset, unset, 23px);
+}
+
+.back-button.dark-mode::before {
+    background-image: url(/assets/back-button-arrow-white.svg);
+}
+
+.back-button:hover {
+    background-color: #f1f1f1;
+}
+
+.back-button.dark-mode:hover {
+    background-color: #24333f;
+}
+
+@media screen and (max-width: 768px) {
+    .back-button {
+        width: 104px;
+        height: 32px;
+        border-radius: 2px;
+        padding: 6px 20px 6px 0px;
+    }
+    
+    .back-button::before {
+        content: '';
+        width: 25px;
+        height: 25px;
+        background-image: url(/assets/back-button-arrow.svg);
+        background-size: cover;
+        background-position: center;
+        @include absolute-el(2px, unset, unset, 23px);
+    }
+    
+}

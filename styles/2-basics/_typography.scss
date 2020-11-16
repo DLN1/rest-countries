@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.title-nav-bar {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 20px;    
+}
+
+.dark-mode {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.search {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.filter {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.card-countries-title {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 26px;
+}
+
+.card-desc {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.detail-desc {
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.detail-title {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 44px;
+}
+
+.detail-border {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+}
+
+.detail-border-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.back-button {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.black {
+    color: $black;
+}
+
+.white, .dark-mode {
+    color: white;
+}
+
+.bold700 {
+    font-weight: 700;
+}
+
+.bold600 {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    .title-nav-bar {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .dark-mode {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .back-button, .detail-desc, .card-desc {
+        font-size: 14px;
+    }
+}
